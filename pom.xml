@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.barshop.app.web</groupId>
+	<artifactId>springboot-client-ejb-barshop</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>springboot-client-ejb-barshop</name>
+	<description>Barshop Client EJB</description>
+	<packaging>war</packaging>
+	<!-- INIT PARENT -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.5</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<!-- FINISH PARENT -->
+	<!-- INIT PROPERTIES -->
+	<properties>
+		<java.version>8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<tiles.version>3.0.5</tiles.version>
+	</properties>
+	<!-- FINISH PROPERTIES -->
+	<dependencies>
+		<!-- INIT SPRINGBOOT JPA DATABASE DEPENDENCY -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!-- FINISH SPRINGBOOT JPA DATABASE DEPENDENCY -->
+		<!-- INIT SPRINGBOOT WEB DEPENDENCY -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- FINISH SPRINGBOOT WEB DEPENDENCY -->
+		<!-- INIT SPRINGBOOT TEST DEPENDENCY -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- FINISH SPRINGBOOT TEST DEPENDENCY -->
+		<!-- INIT LOOMBOK DEPENDENCY -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+		<!-- FINISH LOOMBOK DEPENDENCY -->
+		<!-- INIT H2 DATABASE ENGINE DEPENDENCY -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+		<!-- FINISH H2 DATABASE ENGINE DEPENDENCY -->
+		<!-- INIT LOG4J DEPENDENCY -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+		</dependency>
+		<!-- FINISH LOG4J DEPENDENCY -->
+		<!-- INIT WILDFLY CLIENT EJB DEPENDENCY -->
+		<dependency>
+			<groupId>org.wildfly</groupId>
+			<artifactId>wildfly-ejb-client-bom</artifactId>
+			<version>10.0.0.Final</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>io.undertow</groupId>
+			<artifactId>undertow-servlet</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.wildfly</groupId>
+			<artifactId>wildfly-jms-client-bom</artifactId>
+			<version>10.0.0.Final</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>artemis-hqclient-protocol</artifactId>
+			<version>2.17.0</version>
+		</dependency>
+		<!-- FINISH WILDFLY CLIENT EJB DEPENDENCY -->
+		<!-- INIT BARSHOP EJB DEPENDENCY -->
+		<dependency>
+	<groupId>com.barshop.app.ejb</groupId>
+	<artifactId>wildfly-ejb-remote-barshop</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<!-- FINISH BARSHOP EJB DEPENDENCY -->
+		<!-- INIT TOMCAT JSP COMPATIBILITY DEPENDENCY -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<!-- FINISH TOMCAT JSP COMPATIBILITY DEPENDENCY -->
+		<!-- INIT SPRINGBOOT DEVELOPERS LIB (DEBUG) DEPENDENCY -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.boot</groupId> -->
+<!-- 			<artifactId>spring-boot-devtools</artifactId> -->
+<!-- 		</dependency> -->
+		<!-- FINISH SPRINGBOOT DEVELOPERS LIB (DEBUG) DEPENDENCY -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- INIT PLUGINS BUILD SPRINGBOOT PROJECT DEPENDENCY -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- FINISH PLUGINS BUILD SPRINGBOOT PROJECT DEPENDENCY -->
+		</plugins>
+	</build>
+
+</project>
