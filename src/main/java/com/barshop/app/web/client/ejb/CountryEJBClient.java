@@ -46,7 +46,7 @@ public class CountryEJBClient {
         jndiProperties.put(Context.PROVIDER_URL, "http-remoting://" + host + ":" + port);
         jndiProperties.put(Context.SECURITY_PRINCIPAL, jboosEJBClientProperties.getProp().getProperty("remote.connection.default.username"));
         jndiProperties.put(Context.SECURITY_CREDENTIALS, jboosEJBClientProperties.getProp().getProperty("remote.connection.default.password"));
-        jndiProperties.put("jboss.naming.client.ejb.context", true);
+        jndiProperties.put("jboss.naming.client.ejb.context", false);
         LOGGER.info("finish context");
         return new InitialContext(jndiProperties);
     }
