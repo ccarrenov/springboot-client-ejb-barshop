@@ -42,7 +42,7 @@ public class CountryEJBService {
         LOGGER.info("findAll");
         try {
             connect();
-            countryRemote.save(country);
+            countryRemote.createOrUpdate(country);
         } catch (Exception ex) {
             LOGGER.error("Error findAll", ex);
         }
@@ -52,7 +52,7 @@ public class CountryEJBService {
         LOGGER.info("update");
         try {
             connect();
-            countryRemote.update(country);
+            countryRemote.createOrUpdate(country);
         } catch (Exception ex) {
             LOGGER.error("Error update", ex);
         }

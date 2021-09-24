@@ -6,5 +6,4 @@
 		http://java.sun.com/xml/ns/javaee 
 		http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 	<display-name>springboot-client-ejb-barshop</display-name>
-
 </web-app>

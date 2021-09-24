@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.barshop.app.ejb.remote.CountryEJBRemote;
-import com.barshop.app.ejb.remote.ejb.CountryEJBBean;
+import com.barshop.app.ejb.remote.beans.CountryEJBBean;
 import com.barshop.app.web.properties.JbossEJBClientProperties;
 
 import lombok.Getter;

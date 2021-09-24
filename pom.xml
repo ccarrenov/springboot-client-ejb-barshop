@@ -99,9 +99,10 @@
 		<!-- FINISH WILDFLY CLIENT EJB DEPENDENCY -->
 		<!-- INIT BARSHOP EJB DEPENDENCY -->
 		<dependency>
-	<groupId>com.barshop.app.ejb</groupId>
-	<artifactId>wildfly-ejb-remote-barshop</artifactId>
+			<groupId>com.barshop.app.ejb</groupId>
+			<artifactId>wildfly-ejb-remote-barshop</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
+			<type>ejb</type>
 		</dependency>
 		<!-- FINISH BARSHOP EJB DEPENDENCY -->
 		<!-- INIT TOMCAT JSP COMPATIBILITY DEPENDENCY -->
@@ -122,10 +123,10 @@
 		</dependency>
 		<!-- FINISH TOMCAT JSP COMPATIBILITY DEPENDENCY -->
 		<!-- INIT SPRINGBOOT DEVELOPERS LIB (DEBUG) DEPENDENCY -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework.boot</groupId> -->
-<!-- 			<artifactId>spring-boot-devtools</artifactId> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-devtools</artifactId> -->
+		<!-- </dependency> -->
 		<!-- FINISH SPRINGBOOT DEVELOPERS LIB (DEBUG) DEPENDENCY -->
 	</dependencies>
 
